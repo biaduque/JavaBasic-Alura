@@ -1,26 +1,28 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Pessoa beatriz = new Pessoa().cadastrar("Beatriz", 23, 70);;
+        CriaConta construtor = new CriaConta();
+
+        Pessoa beatriz = new Pessoa("Beatriz", 23, 70);;
         
         App.print("Usuário cadastrado: " + beatriz.nome);
         App.print("Criando conta");
         
-        Conta conta = new Conta();
-        conta.criaConta("0000", "000000-x", beatriz);
+        Conta conta = construtor.criaConta("0000", "000000-x", beatriz);
 
-        App.print("Conta criada. Informações:\nAgencia: " + conta.agencia + "\nNúmero: " + conta.numero + "\nTitular: " + conta.titular.nome);
+        App.print("Conta criada. Informações:\nAgencia: " + conta.getAgencia() + "\nNúmero: " + conta.getNumero() + "\nTitular: " + conta.getTitular().nome);
         App.print("Depositando R$50,00");
 
         conta.deposita(50);
 
         App.print("Transferindo R$ 5,00 de Beatriz para João");
 
-        Conta contaJoao = new Conta();
-        contaJoao.criaConta("00001", "000001-x", new Pessoa().cadastrar("João", 22, 80));
+        Conta contaJoao = construtor.criaConta("00001", "000001-x", new Pessoa("João", 22, 80));
 
         conta.transfere(5, contaJoao);
 
-        App.print("Saldo Beatriz: R$"+ conta.saldo);
+        App.print("Saldo Beatriz: R$"+ conta.getSaldo());
+
+        App.print("O total de contas criadas foi: " + construtor.getTotalContas());
 
         
     }
