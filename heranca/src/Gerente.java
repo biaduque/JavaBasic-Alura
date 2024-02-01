@@ -31,6 +31,10 @@ public class Gerente extends Funcionario {
     // Reescrita:: override | reescrever um metodo da classe pai
     public double getBonificacao() {
         // Usamos .super para especificar que é um atributo da classe pai
-        return super.getBonificacao() + super.getSalario();
+        System.out.println("Chamando o método bonificacao do GERENTE");
+        double boni = super.getBonificacao() + super.getSalario();
+        System.out.println("Bonificacao GERENTE:" + boni);
+
+        return boni;
     }
 }
