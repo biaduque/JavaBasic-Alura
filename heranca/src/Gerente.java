@@ -32,7 +32,7 @@ public class Gerente extends Funcionario {
     public double getBonificacao() {
         // Usamos .super para especificar que é um atributo da classe pai
         System.out.println("Chamando o método bonificacao do GERENTE");
-        double boni = super.getBonificacao() + super.getSalario();
+        double boni = super.getSalario();
         System.out.println("Bonificacao GERENTE:" + boni);
 
         return boni;

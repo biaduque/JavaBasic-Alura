@@ -1,12 +1,12 @@
-public class Funcionario {
+// Interface::: Uma classe abstrata nao pode ser instanciada. Ela apenas é utilizada como herança 
+public abstract class Funcionario {
 
     private String nome;
     private String cpf;
     protected double salario; // protected permite que gerente extenda o atributo sem a necessidade de deixar o atributo publico
 
-    public double getBonificacao() {
-        return this.salario * 0.1;
-    }
+    // um metodo abstrato nao pode ser implementado. Ele é utilizado apenas como parte da Interface
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;
