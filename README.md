@@ -1,14 +1,23 @@
 # JavaBasic-Alura
- Repositório com exercícios de códigos criados no decorrer do curso de Java básico da plataforma Alura
+ Repositório com exercícios de códigos criados no decorrer da trilha de cursos de Java Básico da plataforma Alura
  
 ### Instrutor
-Paulo Silveira
+Paulo Silveira e Nico Steppat
 
 ### Carga horária 
-8h 
+44h 
 
-### Nota para o curso 
+### Nota para a trilha
 ⭐⭐⭐⭐⭐ [5/5]
+
+### Cursos contidos na trilha 
+✅ [Java JRE e JDK: compile e execute o seu programa](https://cursos.alura.com.br/course/java-primeiros-passos)
+
+✅ [Java OO: entendendo a Orientação a Objetos](https://cursos.alura.com.br/course/java-introducao-orientacao-objetos)
+
+✅ [Java Polimorfismo: entenda herança e interfaces](https://cursos.alura.com.br/course/java-heranca-interfaces-polimorfismo)
+
+✅ [Java Exceções: aprenda a criar, lançar e controlar exceções](https://cursos.alura.com.br/course/java-excecoes)
 
 ### Comentário pessoal 💬
 O curso apresenta ótima didática. Além do conteúdo ser acessível (vídeos legendados e transcritos) o professor disponibiliza a base didática de forma modularizada e organizada, o que faz com que o aluno consiga organizar os conteúdos e realizar as atividades de forma produtiva. 
